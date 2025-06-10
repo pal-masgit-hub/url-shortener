@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1>Type your URL here:</h1><br>
+    <form action="" method="post">
+        {%csrf_token%}
+        {{form}}
+        <button type="submit">Submit</button>
+        <a href="{% url 'random'%}">Random</a>
+    </form>
+</body>
+</html>
